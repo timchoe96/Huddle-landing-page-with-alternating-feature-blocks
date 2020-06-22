@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+header{
+    background-image: url('./images/bg-hero-desktop.svg');
+    background:hsl(193, 100%, 96%);
+    height:90vh;
+}
+button{
+    margin-left:auto;
+    width:180px;
+    height:40px;
+    background:white;
+    border:none;
+    border-radius:20px;
+    box-shadow:2px 2px 8px -5px hsl(208, 11%, 55%);
+    font-family:'Poppins',sans-serif;
+}
+nav{
+    display:flex;
+    padding:30px 40px 0;
+}
+
+.mainContent{
+    margin-top:50px;
+    display:flex;
+    
+    aside{
+        padding:100px 150px 0 50px;
+        // border:1px solid black;
+        h1{
+            font-family:'Poppins',sans-serif;
+            font-size:38px;
+        }
+        p{
+            margin-top:20px;
+            font-family:'Open Sans',sans-serif;
+            line-height: 1.5;
+            font-size:16px;
+        }
+        button{
+        background:hsl(322, 100%, 66%);
+        color:white;
+        width:240px;
+        font-size:12px;
+        margin-top:20px;
+        height:45px;
+        }
+    }
+    img{
+        width:50vw;
+        height:auto; 
+        margin-right:50px;   
+    }
+}
+main{
+    margin-bottom:250px;
+}
+.container{
+    padding:50px ;
+    width:90vw;
+    margin:40px auto;
+    display:flex;
+    // border:1px solid black;
+    box-shadow:5px 5px 15px -5px  hsl(208, 11%, 55%);
+   align-items: center;
+   justify-content: space-around;
+    div{
+        width:35%;
+        h1{
+            font-family:'Poppins',sans-serif;
+            
+        }
+        p{
+            font-family:'Open Sans',sans-serif;
+            margin-top:20px;
+        }
+    }
+    .illustration{
+        width:30%;
+        height:auto;
+    }
+}
+.first{
+    margin-top:120px;
+}
+
+footer{
+    position:relative;
+    .question{
+        position:absolute;
+        top:-100px;
+        left:350px;
+        box-shadow:5px 5px 15px -5px  black;
+        width:50%;
+        background:white;
+        color:black;
+        border-radius: 10px;
+        height:200px;
+        text-align: center;
+        h1{
+            margin-top:50px;
+        }
+    button{
+        background:hsl(322, 100%, 66%);
+        color:white;
+        width:240px;
+        font-size:12px;
+        margin-top:20px;
+        height:45px;
+    } 
+    }
+    .logoWhite{
+        margin-bottom:20px;
+    }
+    color:white;
+    background: hsl(192, 100%, 9%);
+    font-family:'Open Sans';
+    .footerContainer{
+        position:relative;
+        .four{
+            
+            i{
+                font-size:30px;
+                width:50px;
+                margin-bottom:70px;
+            }
+            p{
+                
+                position:absolute;
+                bottom:50px;
+                right:50px;
+                font-size: 12px; 
+            }
+        }
+       .one{
+           width:30%;
+           p{
+               margin-bottom:20px;
+              img{
+                margin-right:10px;
+              }
+              
+           }
+       }
+        padding:200px 0 100px 0;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        ul{
+        list-style:none;
+        li{
+            margin-bottom:10px;
+        }
+        }
+    }
+  .flex{
+      display:flex;
+      img{
+          align-self:flex-start;
+      }
+    .paragraph{
+        margin-left: 20px;
+  
+    }
+  }
+  
+}
+
+
+
+// media query start!!
+
+@media only screen and (max-width:375px){
+    .mainlogo{
+        width:auto;
+        height:20px;
+    }
+    button{
+        margin-left:auto;
+        width:100px;
+        height:30px;
+        background:white;
+        border:none;
+        border-radius:20px;
+        box-shadow:2px 2px 8px -5px hsl(208, 11%, 55%);
+        font-family:'Poppins',sans-serif;
+        font-size:10px;
+    }
+    .mainContent{
+        background-image: url('./images/bg-hero-mobile.svg');
+        margin-top:0px;
+        display:flex;
+        flex-wrap:wrap;
+        text-align: center;
+       aside{
+        padding:100px 0 0 0;
+           h1{
+               font-size:25px;
+           }
+           p{
+               padding:0 20px;
+           }
+       }
+       img{
+        width:80vw;
+        padding-top:40px;
+        height:auto; 
+        margin:auto;   
+    }
+    }
+    .container{
+        padding:50px 0;
+        flex-direction:column;
+        text-align: center;
+        div{
+            width:90%;
+            h1{
+                font-family:'Poppins',sans-serif;
+                font-size:20px;
+            }
+            p{
+                font-family:'Open Sans',sans-serif;
+                margin-top:20px;
+                line-height: 1.5;
+            }
+        }   
+        .illustration{
+            width:70%;
+            height:auto;
+            margin-bottom:40px;
+        }
+    }
+    .first{
+        margin-top:50px;
+        flex-direction:column-reverse;
+    }
+    .third{
+        flex-direction:column-reverse;
+    }
+    
+    nav{
+        align-items: center;
+    }
+   footer{
+    .question{
+        position:absolute;
+        left:20px;
+        top:-80px;
+        box-shadow:5px 5px 15px -5px  black;
+        width:90%;
+        background:white;
+        color:black;
+        border-radius: 10px;
+        height:150px;
+        text-align: center;
+        h1{
+            margin-top:30px;
+            font-size:18px;
+            font-weight:600;
+        }
+    button{
+        background:hsl(322, 100%, 66%);
+        color:white;
+        width:60%;
+        font-size:10px;
+        margin-top:20px;
+        height:45px;
+    } 
+}
+       .footerContainer{
+        padding:180px 0 50px 20px;
+        align-items: flex-start;
+           flex-direction: column;
+           .one{
+            width:93%;
+            p{
+                margin-bottom:20px;
+               img{
+                 margin-right:10px;
+               }
+               
+            }
+        }
+        .four{
+            align-self:center;
+            margin-top:20px;
+            i{
+                width:40px;
+                margin-bottom:0px;
+                font-size:20px;
+            }
+            div{
+                display:flex;
+                justify-content: center;
+            }
+            p{
+                position:static;
+                margin-top: 30px;
+                font-size: 10px;
+            }
+        }
+        ul{
+            li{
+                margin-bottom:20px;
+            }
+       }
+   }
+}
+}
